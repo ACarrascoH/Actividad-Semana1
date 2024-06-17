@@ -18,7 +18,7 @@ function mensaje() {
 
     alert("Los datos ingresados son: \n" +
         "Nombre: " + nombre + "\n" +
-        "Fono: " + fecha + "\n" +
+        "Fono: " + fono + "\n" +
         "Fecha: " + fecha + "\n" +
         "Email: " + email + "\n" +
         "Password: " + password + "\n" +
