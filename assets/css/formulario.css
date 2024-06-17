@@ -1,0 +1,68 @@
+body {
+    background-color:rgb(63, 147, 189) ;
+    width: auto;
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+.Titulo {
+    text-align: center;
+    padding: 3%;
+}
+
+.contenedor {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    font-family: Arial;
+    width: 40%;
+    padding:2%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 4%;
+}
+
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.seleccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input,
+select {
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+}
+
+.boton{
+    text-align: center;
+}
+button {
+    border-radius: 15px;
+    background-color: #64a7f9;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

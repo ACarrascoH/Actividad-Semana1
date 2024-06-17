@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="Titulo">
+            <img src="assets/images/socius.png" alt="Logo pagina">
+            <h1>Formulario de contacto</h1>
+        </div>
+
+
+        <form action="#"  onsubmit="mensaje()">
+            <div class="datos">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese nombre" required>
+            </div>
+            <div class="datos">
+                <label for="Fono">Fono</label>
+                <input type="number" name="Fono" id="Fono" placeholder="Ingrese Telefono" required>
+            </div>
+            <div class="datos">
+                <label for="Fecha">Fecha</label>
+                <input type="date" name="Fecha" id="Fecha" placeholder="Ingrese Fecha" required>
+            </div>
+            <div class="datos">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Ingrese email" required>
+            </div>
+            <div class="datos">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" placeholder="Ingrese contraseña" required>
+            </div>
+            <div class="datos">
+                <label for="Ciudad">Ciudad</label>
+                <select name="" id="Ciudad" placeholder="Seleccione ciudad" required>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Valparaiso">Valparaiso</option>
+                    <option value="Coquimbo">Coquimbo</option>
+                    <option value="Pto Montt">Pto Montt</option>
+                </select>
+            </div>
+            <div class="datos">
+                <label>Genero</label>
+                <div class="seleccion">
+                    <input type="radio" name="genero" value="Masculino" id="Genero1" required>
+                    <label for="genero">Masculino</label>
+
+                    <input type="radio" name="genero" value="Femenino" id="Genero2" required>
+                    <label for="" genero>Femenino</label>
+                </div>
+            </div>
+
+            <div class="boton">
+                <button type="submit">Enviar</button>
+            </div>
+
+
+        </form>
+    </div>
+    <script>
+        function mensaje() {
+
+            var nombre = document.getElementById("Nombre").value;
+            var fono = document.getElementById("Fono").value;
+            var fecha = document.getElementById("Fecha").value;
+            var email = document.getElementById("Email").value;
+            var password = document.getElementById("Password").value;
+            var ciudad = document.getElementById("Ciudad").value;
+            var genero;
+            var generos = document.getElementsByName('genero');
+
+            for (var i = 0, length = generos.length; i < length; i++) {
+                if (generos[i].checked) {
+                    genero = generos[i].value;
+                    break;
+                }
+            }
+
+            alert("Los datos ingresados son: \n" +
+                "Nombre: " + nombre + "\n" +
+                "Fono: " + fecha + "\n" +
+                "Fecha: " + fecha + "\n" +
+                "Email: " + email + "\n" +
+                "Password: " + password + "\n" +
+                "Ciudad: " + ciudad + "\n" +
+                "Genero: " + genero + "\n")
+
+        }
+    </script>
+</body>
+
+</html>
